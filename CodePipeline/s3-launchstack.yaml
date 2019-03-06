@@ -7,7 +7,7 @@ Parameters:
     Type: String
   GitHubToken:
     NoEcho: true
-    Description: Secret. It might look something like df98fb79d02067ede625971f4f60c3a566a29d68 OAuthToken with access to Repo. Go to https://github.com/settings/tokens
+    Description: Secret. It might look something like a7e92d6bd2e487bbb3806a9ea54e4acb89cc790d OAuthToken with access to Repo. Go to https://github.com/settings/tokens
     Type: String
   GitHubUser:
     Default: NidhiJainAmazon
