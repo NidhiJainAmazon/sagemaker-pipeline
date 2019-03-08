@@ -31,14 +31,16 @@ def upload_to_s3(channel, file):
     s3.Bucket(bucket).put_object(Key=key, Body=data)
 
 # caltech-256
-print ("Downloadng Training Data")
-download('http://data.mxnet.io/data/caltech-256/caltech-256-60-train.rec')
-upload_to_s3('train', 'caltech-256-60-train.rec')
-print ("Finished Downloadng Training Data")
-print ("Downloadng Testing Data")
-download('http://data.mxnet.io/data/caltech-256/caltech-256-60-val.rec')
-upload_to_s3('validation', 'caltech-256-60-val.rec')
-print ("Finished Downloadng Testing Data")
+print ("Using pre-downloaded training and testing data from s3")
+# print ("Downloadng Training Data")
+# download('http://data.mxnet.io/data/caltech-256/caltech-256-60-train.rec')
+# upload_to_s3('train', 'caltech-256-60-train.rec')
+# print ("Finished Downloadng Training Data")
+# print ("Downloadng Testing Data")
+# download('http://data.mxnet.io/data/caltech-256/caltech-256-60-val.rec')
+# upload_to_s3('validation', 'caltech-256-60-val.rec')
+# print ("Finished Downloadng Testing Data")
+
 
 print ("Setting Algorithm Settings")
 # The algorithm supports multiple network depth (number of layers). They are 18, 34, 50, 101, 152 and 200
